@@ -1,0 +1,61 @@
+/* Es lo que define el diseño principal de toda la pagina, sea color de fondo, tipo de letra o margenes */
+body {
+    /* Es el tipo de letra que se manejara para todos los textos en general */
+    font-family: sans-serif;
+    /* Es la margen que tendra el documento al visualizarse y define el espacio fuera del borde de un elemento */
+    margin: 0;
+}
+
+/* Afectara la presentacion de todos los elementos que esten dentro de la clase "contenedor". Por ejemplo los elementos de tarjeta */
+.contenedor {
+    /* Display define el tipo de visualizacion del elemento, en este caso se convierte todo en un elemento flexible */
+    display: flex; 
+    /* Flex-wrap define si los elementos ocuparan una sola linea o si se puede mover a otras sin que se pierdan en el espacio */
+    flex-wrap: wrap; 
+    /* Justify-content controla el alineamiento de los elementos */
+    justify-content: space-around; 
+    /* Padding define el borde interno de un elemento */
+    padding: 20px;
+}
+
+/* Afectara la presentacion de todos los elementos que esten dentro de la clase "tarjeta" */
+.tarjeta {
+    /* Width define el ancho de los elementos */
+    width: 300px; 
+    /* Margin controla la separacion de los elementos*/
+    margin: 10px; 
+    /* Border agrega un borde a cada elemento */
+    border: 1px solid #ccc; 
+    /* Padding controla el borde interno de cada elemento de acuerdo al borde */
+    padding: 20px; 
+    /* Border-radius define el redondeo de cada curva del borde */
+    border-radius: 5px; 
+    /* Box-shadow agrega un sombreado al borde */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Afectara la presentacion de todos los elementos que esten dentro de la clase "tarjeta" y esten con la etiqueta "img" */
+.tarjeta img {
+    /* Width controla el ancho de la imagen */
+    width: 100%; 
+    /* Height controla la altura de la imagen */
+    height: auto; 
+    /* Define que cada elemento se comporte como un bloque independiente */
+    display: block; 
+    /* Border-radius define el borde de la imagen */
+    border-radius: 5px 5px 0 0; 
+}
+
+/* Afectara la presentacion de todos los elementos que esten dentro de la clase "tarjeta" y esten con la etiqueta "h3" */
+.tarjeta h3 {
+    /* Margin-top define la margen superior que tendra el texto */
+    margin-top: 10px; 
+}
+
+/* Afectara la presentacion de todos los elementos que esten dentro de la clase "tarjeta" y esten con la etiqueta "p" */
+.tarjeta p {
+    /* Font-size controla el tamaño del texto del parrafo */
+    font-size: 0.9em; 
+    /* Line-height controla el espacio que tiene cada renglon */
+    line-height: 1.5; 
+}
